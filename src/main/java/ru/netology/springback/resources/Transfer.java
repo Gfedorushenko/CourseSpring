@@ -28,15 +28,18 @@ public class Transfer {
     public String getCardToNumber(){
         return cardToNumber;
     }
-
+    public boolean getStatus(){
+        return status;
+    }
     @Override
     public String toString() {
         return "Transfer{" +
-                "cardFromNumber='" + cardFromNumber + '\'' +
-                ", cardFromValidTill='" + cardFromValidTill + '\'' +
-                ", cardFromCVV='" + cardFromCVV + '\'' +
-                ", cardToNumber='" + cardToNumber + '\'' +
+                "карты, с которой было списание='" + cardFromNumber + '\'' +
+//                ", cardFromValidTill='" + cardFromValidTill + '\'' +
+//                ", cardFromCVV='" + cardFromCVV + '\'' +
+                ", карты зачисления='" + cardToNumber + '\'' +
                 ", amount=" + amount +
+                ", результат операции=" + status +
                 '}';
     }
 }

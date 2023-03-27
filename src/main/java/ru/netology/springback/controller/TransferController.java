@@ -1,9 +1,9 @@
 package ru.netology.springback.controller;
 
 import org.springframework.web.bind.annotation.*;
-import ru.netology.springback.service.TransferService;
 import ru.netology.springback.resources.ConfirmOperation;
 import ru.netology.springback.resources.Transfer;
+import ru.netology.springback.service.TransferService;
 
 @RestController
 @CrossOrigin
@@ -23,6 +23,6 @@ public class TransferController {
     @PostMapping("/confirmOperation")
     public Long getConfirmOperation(@RequestBody ConfirmOperation confirmOperation)
             throws RuntimeException {
-        return service.startСonfirmOperation(confirmOperation);
+        return service.startConfirmOperation(confirmOperation);
     }
 }
